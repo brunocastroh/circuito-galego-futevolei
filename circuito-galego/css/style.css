@@ -7,18 +7,18 @@
 
 /* ---- Variables ---- */
 :root {
-  --verde-escuro: #0d3b2e;
-  --verde-medio: #1a5c45;
-  --verde-tropical: #2e9e6e;
-  --verde-claro: #4ecb94;
+  --verde-escuro: #0a2540;
+  --verde-medio: #0e3d6e;
+  --verde-tropical: #0077b6;
+  --verde-claro: #00b4d8;
   --amarelo: #f0c040;
-  --area: #e8d5a3;
-  --branco: #f5f9f7;
-  --gris-claro: #e8ede9;
-  --gris-medio: #9aada2;
-  --negro: #0a1f17;
-  --sombra: 0 4px 24px rgba(13,59,46,0.18);
-  --sombra-forte: 0 8px 40px rgba(13,59,46,0.28);
+  --area: #caf0f8;
+  --branco: #f0f8ff;
+  --gris-claro: #e0eef7;
+  --gris-medio: #7fa8c9;
+  --negro: #060f1a;
+  --sombra: 0 4px 24px rgba(0,119,182,0.18);
+  --sombra-forte: 0 8px 40px rgba(0,119,182,0.28);
   --radius: 10px;
   --radius-grande: 18px;
   --transicion: 0.22s cubic-bezier(0.4,0,0.2,1);
