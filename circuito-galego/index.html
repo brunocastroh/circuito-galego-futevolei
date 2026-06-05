@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Circuito Galego de Futevôlei 2026</title>
+  <meta name="description" content="Plataforma oficial del Circuito Galego de Futevôlei 2026. Ranking, etapas, partidos y resultados." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">FV</div>
+        <div class="logo-text">
+          <span class="principal">Circuito Galego</span>
+          <span class="sub">Futevôlei · 2026</span>
+        </div>
+      </a>
+      <nav class="nav" id="navPrincipal">
+        <a href="index.html">Inicio</a>
+        <a href="ranking.html">Ranking</a>
+        <a href="etapa1.html">Etapa 1</a>
+        <a href="etapa2.html">Etapa 2</a>
+        <a href="etapa3.html">Etapa 3</a>
+        <a href="reglamento.html">Reglamento</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-pattern"></div>
+    <div class="hero-content">
+      <div class="hero-badge">Temporada oficial en curso</div>
+      <h1 class="hero-title">
+        Circuito Galego
+        <span class="destaque">de Futevôlei</span>
+      </h1>
+      <div class="hero-ano">· 2026 ·</div>
+      <p class="hero-desc">
+        La plataforma oficial del circuito gallego de futevólei.
+        Sigue el ranking, los partidos y los resultados de las tres etapas en tiempo real.
+      </p>
+      <div class="hero-btns">
+        <a href="ranking.html" class="btn btn-primario">🏆 Ver ranking</a>
+        <a href="etapa1.html" class="btn btn-secundario">Ver Etapa 1 →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ETAPAS -->
+  <section class="seccion" style="background: rgba(13,59,46,0.08);">
+    <div class="seccion-interior">
+      <div class="seccion-header">
+        <div class="etiqueta">Temporada 2026</div>
+        <h2>Las tres etapas</h2>
+        <p>Tres torneos, tres playas, un solo campeón. Todas las etapas puntúan para el ranking.</p>
+      </div>
+
+      <div class="grid-etapas" id="gridEtapas">
+        <!-- Se rellena dinámicamente desde Google Sheets -->
+        <!-- Mientras carga, mostramos tarjetas estáticas -->
+        <article class="tarjeta-etapa">
+          <div class="etapa-num">Etapa 01</div>
+          <h3 class="etapa-nombre">Etapa 1</h3>
+          <div id="estado-etapa1" class="badge-estado proxima">Próxima</div>
+          <div class="etapa-info">
+            <div class="etapa-info-item">
+              <span class="icono">📍</span>
+              <span id="ciudad-etapa1">Vigo — Samil</span>
+            </div>
+            <div class="etapa-info-item">
+              <span class="icono">📅</span>
+              <span id="fecha-etapa1">18 jul 2026</span>
+            </div>
+          </div>
+          <a href="etapa1.html" class="btn btn-primario" style="width:100%;justify-content:center">Ver etapa →</a>
+        </article>
+
+        <article class="tarjeta-etapa">
+          <div class="etapa-num">Etapa 02</div>
+          <h3 class="etapa-nombre">Etapa 2</h3>
+          <div id="estado-etapa2" class="badge-estado proxima">Próxima</div>
+          <div class="etapa-info">
+            <div class="etapa-info-item">
+              <span class="icono">📍</span>
+              <span id="ciudad-etapa2">A Coruña — Riazor</span>
+            </div>
+            <div class="etapa-info-item">
+              <span class="icono">📅</span>
+              <span id="fecha-etapa2">15 ago 2026</span>
+            </div>
+          </div>
+          <a href="etapa2.html" class="btn btn-primario" style="width:100%;justify-content:center">Ver etapa →</a>
+        </article>
+
+        <article class="tarjeta-etapa">
+          <div class="etapa-num">Etapa 03</div>
+          <h3 class="etapa-nombre">Etapa 3</h3>
+          <div id="estado-etapa3" class="badge-estado proxima">Próxima</div>
+          <div class="etapa-info">
+            <div class="etapa-info-item">
+              <span class="icono">📍</span>
+              <span id="ciudad-etapa3">Sanxenxo — Silgar</span>
+            </div>
+            <div class="etapa-info-item">
+              <span class="icono">📅</span>
+              <span id="fecha-etapa3">12 sep 2026</span>
+            </div>
+          </div>
+          <a href="etapa3.html" class="btn btn-primario" style="width:100%;justify-content:center">Ver etapa →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORÍAS -->
+  <section class="seccion">
+    <div class="seccion-interior">
+      <div class="seccion-header">
+        <div class="etiqueta">Competición</div>
+        <h2>Dos categorías</h2>
+        <p>Elige tu nivel y compite. Ambas categorías puntúan para el ranking individual.</p>
+      </div>
+
+      <div class="grid-categorias">
+        <div class="tarjeta-categoria">
+          <div class="cat-icono">🌱</div>
+          <div class="cat-nombre">Iniciante</div>
+          <p class="cat-desc">Para jugadores que están empezando en el futevólei. Categoría ideal para aprender y disfrutar del deporte.</p>
+        </div>
+        <div class="tarjeta-categoria">
+          <div class="cat-icono">⚡</div>
+          <div class="cat-nombre">Pro</div>
+          <p class="cat-desc">Para jugadores con experiencia. Alta competitividad, mejor nivel técnico y partidos más intensos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SISTEMA DE PUNTOS -->
+  <section class="seccion" style="background: rgba(13,59,46,0.08);">
+    <div class="seccion-interior">
+      <div class="seccion-header">
+        <div class="etiqueta">Sistema de puntuación</div>
+        <h2>Ranking individual</h2>
+        <p>Los puntos se asignan individualmente. Si una pareja gana, ambos jugadores reciben los mismos puntos. La suma de las tres etapas forma el total.</p>
+      </div>
+
+      <div class="grid-puntos">
+        <div class="punto-item">
+          <div class="puntos">1000</div>
+          <div class="posicion">🥇 Campeón</div>
+        </div>
+        <div class="punto-item">
+          <div class="puntos">800</div>
+          <div class="posicion">🥈 Subcampeón</div>
+        </div>
+        <div class="punto-item">
+          <div class="puntos">600</div>
+          <div class="posicion">Semifinal</div>
+        </div>
+        <div class="punto-item">
+          <div class="puntos">400</div>
+          <div class="posicion">Cuartos</div>
+        </div>
+        <div class="punto-item">
+          <div class="puntos">200</div>
+          <div class="posicion">Fase grupos</div>
+        </div>
+        <div class="punto-item">
+          <div class="puntos">100</div>
+          <div class="posicion">Participación</div>
+        </div>
+      </div>
+
+      <div style="margin-top:2rem;text-align:center">
+        <a href="ranking.html" class="btn btn-primario">Ver ranking completo →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <div class="logo">
+            <div class="logo-icon">FV</div>
+            <div class="logo-text">
+              <span class="principal">Circuito Galego</span>
+              <span class="sub">Futevôlei · 2026</span>
+            </div>
+          </div>
+          <p class="footer-desc">Plataforma oficial del Circuito Galego de Futevôlei. Temporada 2026.</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="ranking.html">Ranking</a></li>
+            <li><a href="reglamento.html">Reglamento</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Etapas</h4>
+          <ul>
+            <li><a href="etapa1.html">Etapa 1 — Vigo</a></li>
+            <li><a href="etapa2.html">Etapa 2 — A Coruña</a></li>
+            <li><a href="etapa3.html">Etapa 3 — Sanxenxo</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Circuito Galego de Futevôlei</span>
+        <span>Temporada 2026</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="js/config.js"></script>
+  <script src="js/utils.js"></script>
+  <script>
+    // Inicializar menú móvil y nav activo
+    document.addEventListener("DOMContentLoaded", () => {
+      initMenuMovil();
+      marcarNavActivo();
+
+      // Cargar datos dinámicos de etapas desde Sheets
+      cargarEtapasInicio();
+    });
+
+    async function cargarEtapasInicio() {
+      try {
+        const datos = await fetchCSV(SHEETS.etapas);
+        if (!datos || datos.length === 0) return;
+
+        datos.forEach((etapa, i) => {
+          const num = i + 1;
+          const estadoEl = document.getElementById(`estado-etapa${num}`);
+          const ciudadEl = document.getElementById(`ciudad-etapa${num}`);
+          const fechaEl = document.getElementById(`fecha-etapa${num}`);
+
+          if (estadoEl) estadoEl.outerHTML = badgeEstadoEtapa(etapa.estado || "proxima");
+          if (ciudadEl) ciudadEl.textContent = `${etapa.ciudad || ""} — ${etapa.playa || ""}`;
+          if (fechaEl) fechaEl.textContent = formatearFecha(etapa.fecha);
+        });
+      } catch(e) {
+        // No pasa nada, los datos estáticos se quedan
+      }
+    }
+  </script>
+</body>
+</html>

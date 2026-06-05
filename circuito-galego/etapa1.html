@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Etapa 1 — Vigo · Circuito Galego de Futevôlei 2026</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">FV</div>
+        <div class="logo-text">
+          <span class="principal">Circuito Galego</span>
+          <span class="sub">Futevôlei · 2026</span>
+        </div>
+      </a>
+      <nav class="nav" id="navPrincipal">
+        <a href="index.html">Inicio</a>
+        <a href="ranking.html">Ranking</a>
+        <a href="etapa1.html">Etapa 1</a>
+        <a href="etapa2.html">Etapa 2</a>
+        <a href="etapa3.html">Etapa 3</a>
+        <a href="reglamento.html">Reglamento</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="etapa-hero">
+    <div class="etapa-hero-inner">
+      <div id="etapaEstado"><span class="badge-estado proxima">Próxima</span></div>
+      <h1 class="etapa-titulo">Etapa 1</h1>
+      <div class="etapa-meta">
+        <span class="etapa-meta-item">📍 <span id="etapaCiudad">Vigo</span> — <span id="etapaPlaya">Samil</span></span>
+        <span class="etapa-meta-item">📅 <span id="etapaFecha">18/07/2026</span></span>
+      </div>
+    </div>
+  </div>
+
+  <section class="seccion">
+    <div class="seccion-interior">
+
+      <!-- Filtros -->
+      <div class="partidos-controles">
+        <div class="filtros-grupo">
+          <button class="filtro-btn activo" data-filtro-cat-etapa="todas">Todas las categorías</button>
+          <button class="filtro-btn" data-filtro-cat-etapa="Pro">Pro</button>
+          <button class="filtro-btn" data-filtro-cat-etapa="Iniciante">Iniciante</button>
+        </div>
+        <div class="filtros-grupo">
+          <button class="filtro-btn activo" data-filtro-fase="todas">Todas las fases</button>
+          <button class="filtro-btn" data-filtro-fase="Grupos">Grupos</button>
+          <button class="filtro-btn" data-filtro-fase="Cuartos">Cuartos</button>
+          <button class="filtro-btn" data-filtro-fase="Semifinal">Semifinal</button>
+          <button class="filtro-btn" data-filtro-fase="Final">Final</button>
+          <button class="filtro-btn" data-filtro-fase="Tercer puesto">3er puesto</button>
+        </div>
+      </div>
+
+      <!-- Partidos -->
+      <div class="seccion-header" style="margin-bottom:1.2rem;margin-top:1rem">
+        <h2 style="font-size:1.5rem">⚽ Partidos — Fase de grupos</h2>
+      </div>
+      <div id="tablaPartidosWrap">
+        <div class="estado-carga"><div class="spinner"></div><span>Cargando partidos...</span></div>
+      </div>
+
+      <!-- Cuadro final -->
+      <div class="seccion-header" style="margin-bottom:1.2rem;margin-top:3rem">
+        <h2 style="font-size:1.5rem">🏆 Cuadro final — Eliminatorias</h2>
+      </div>
+      <div id="tablaCuadrosWrap">
+        <div class="estado-carga"><div class="spinner"></div><span>Cargando cuadro...</span></div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <div class="logo">
+            <div class="logo-icon">FV</div>
+            <div class="logo-text">
+              <span class="principal">Circuito Galego</span>
+              <span class="sub">Futevôlei · 2026</span>
+            </div>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Otras etapas</h4>
+          <ul>
+            <li><a href="etapa2.html">Etapa 2 — A Coruña</a></li>
+            <li><a href="etapa3.html">Etapa 3 — Sanxenxo</a></li>
+            <li><a href="ranking.html">Ranking general</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 Circuito Galego de Futevôlei</span></div>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/utils.js"></script>
+  <!-- Definimos qué etapa es esta página antes de cargar etapa.js -->
+  <script>const ETAPA_ACTUAL = "Etapa 1";</script>
+  <script src="js/etapa.js"></script>
+</body>
+</html>
